@@ -28,6 +28,6 @@ labels = np.array(labels)
 face_recognizer = cv.face.LBPHFaceRecognizer_create()
 face_recognizer.train(features,labels)
 
-face_recognizer.save('facesTrained.yml')
+face_recognizer.save('facerecognition/facesTrained.yml')
 np.save('features.npy' , features)
 np.save('labels.npy' , labels)
